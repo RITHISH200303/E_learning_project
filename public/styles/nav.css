@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #3aafa9 !important;
+  z-index: 100;
+  height: 100px;
+}
+
+.text {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #3aafa9;
+  color: #17252a;
+  text-align: center;
+  position: relative;
+  width: 90%;
+  margin-top: 14px;
+}
+
+.nav-btn {
+  border: none !important;
+  background-color: transparent !important;
+  cursor: pointer !important;
+  font-size: 20px !important;
+  width: 6% !important;
+}
+
+.open-btn {
+  position: relative !important;
+  top: 10px !important;
+  left: 10px !important;
+  width: 20px;
+}
+
+nav button {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.nav {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 100vh !important;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav.visible {
+  transform: translateX(0);
+}
+
+.nav-black {
+  background-color: #17252a;
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+  transition-delay: 0.4s;
+}
+
+.nav-black.visible {
+  transition-delay: 0s;
+}
+
+.nav-red {
+  background-color: #2b7a78;
+  width: 95%;
+  transition-delay: 0.2s;
+}
+
+.nav-red.visible {
+  transition-delay: 0.2s;
+}
+
+.nav-white {
+  background-color: #feffff;
+  width: 95%;
+  padding: 40px;
+  position: relative;
+  transition-delay: 0s;
+}
+
+.nav-white.visible {
+  transition-delay: 0.4s;
+}
+
+.close-btn {
+  opacity: 0.3;
+  position: absolute;
+  color: black !important;
+  top: 40px;
+  right: 30px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  margin: 20px 0;
+}
+
+.list li a {
+  color: rgb(34, 31, 31);
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.list ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+#about,
+.socioCont {
+  width: 90%;
+  margin: auto !important;
+  text-align: justify;
+}
+
+#about #h3 h3,
+.socioCont h3 {
+  color: #17252a !important;
+  font-weight: 800;
+  font-size: 35px;
+  width: 89%;
+  margin: auto;
+}
+
+.socioCont {
+  width: 100%;
+}
+
+#contactContainor {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto auto auto;
+  margin: 150px auto;
+  width: 90%;
+}
+
+#contactContainor a {
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  width: 100%;
+  padding: 12%;
+  border-radius: 10px;
+  color: #feffff;
+  text-decoration: none;
+  border: 2px solid #feffff;
+}
+
+.fa-facebook {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  background-color: #4267b2;
+}
+
+.fa-facebook:hover {
+  color: #4267b2 !important;
+  background-color: white;
+}
+
+.fa-twitter {
+  grid-row: 1 / span 2;
+  color: white;
+  background-color: #1da1f2;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2 !important;
+  background-color: white;
+}
+
+.fa-youtube {
+  background-color: #282828;
+  color: #ff0000 !important;
+}
+
+.fa-youtube:hover {
+  color: white !important;
+  background-color: #ff0000;
+}
+
+.fa-linkedin {
+  background-color: white;
+  color: #4267b2 !important;
+}
+
+.fa-linkedin:hover {
+  background-color: #4267b2 !important;
+  color: white !important;
+}
+
+.fa-envelope {
+  color: white !important;
+  background-image: linear-gradient(to bottom right,
+      #db4437,
+      #f4b400,
+      #0f9d58,
+      #4285f4) !important;
+}
+
+.fa-envelope:hover {
+  background-image: linear-gradient(to top right,
+      #db4437,
+      #f4b400,
+      #0f9d58,
+      #4285f4) !important;
+
+}
+
+.fa-instagram {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-image: linear-gradient(to bottom right,
+      #405de6,
+      #5b51d8,
+      #833ab4,
+      #c13584,
+      #e1306c,
+      #fd1d1d,
+      #f56040,
+      #f77737,
+      #fcaf45,
+      #ffdc80) !important;
+}
+
+.fa-instagram:hover {
+  background-image: linear-gradient(to top right,
+      #405de6,
+      #5b51d8,
+      #833ab4,
+      #c13584,
+      #e1306c,
+      #fd1d1d,
+      #f56040,
+      #f77737,
+      #fcaf45,
+      #ffdc80) !important;
+
+}
+
+@media screen and (max-width:768px) {
+  #contactContainor a {
+    font-size: 30px;
+    padding: 30px;
+  }
+
+  #contactContainor {
+    margin: 100px auto;
+  }
+
+  #about #h3 h3,
+  .socioCont h3 {
+    font-size: 28px;
+  }
+}

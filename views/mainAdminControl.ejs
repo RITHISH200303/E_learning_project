@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <%- include('includes/head') %>
+    <link rel="stylesheet" href="/styles/mainadmin.css" />
+    <script src="/js/stuFack.js" defer></script>
+  </head>
+  <body>
+    <%- include('includes/navebar') %>
+    <div class="changeBtn">
+      <button id="studShow">Student</button>
+      <button id="fackShow">Faculty</button>
+    </div>
+    <div class="containormain">
+      <div class="stud">
+        <% for(stud in students) { %>
+        <div style="margin: 10px auto">
+          <label for="">Name: </label>
+          <h3><%=students[stud].name %></h3>
+          <label for="">UserId: </label>
+          <h3><%=students[stud].userId %></h3>
+          <a href="/mainadmin/edit/<%=students[stud]._id %>" class="editbtn"
+            >Edit</a
+          >
+          <a href="/mainadmin/delete/<%=students[stud]._id %>" class="deletebtn"
+            >Delete</a
+          >
+        </div>
+        <% } %>
+        <a
+          class="addBtn"
+          href="/mainadmin/add/<%=students[0].adminType %>/<%=students[0].department %>"
+          >ADD</a
+        >
+      </div>
+      <div class="faculty" style="display: none">
+        <% for(faculty in facultys) { %>
+        <div>
+          <label for="">Name: </label>
+          <h3><%=facultys[faculty].name %></h3>
+          <label for="">UserId: </label>
+          <h3><%=facultys[faculty].userId %></h3>
+          <a href="/mainadmin/edit/<%=facultys[faculty]._id %>" class="editbtn"
+            >Edit</a
+          >
+          <a
+            href="/mainadmin/delete/<%=facultys[faculty]._id %>"
+            class="deletebtn"
+            >Delete</a
+          >
+        </div>
+        <% } %>
+        <a
+          class="addBtn"
+          href="/mainadmin/add/<%=facultys[0].adminType %>/<%=facultys[0].department %>"
+          >ADD</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

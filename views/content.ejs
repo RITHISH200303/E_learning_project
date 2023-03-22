@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Content</title>
+    <link rel="stylesheet" href="/styles/content.css" />
+    <%- include('includes/head') %>
+  </head>
+  <body>
+    <%- include('includes/navebar') %>
+    <div id="studyContentContainor">
+      <ul>
+        <li><a href="/<%= pdf %>" target="_blank">PDF</a></li>
+        <li>
+          <a href="/video/<%=unit %>/<%=department %>/<%=subject %>">VIDEO</a>
+        </li>
+        <li>
+          <a href="/podcast/<%=unit %>/<%=department %>/<%=subject %> "
+            >PODCAST</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

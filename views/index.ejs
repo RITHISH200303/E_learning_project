@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+    <title>Gurunanak College E-Learning Website</title>
+    <link rel="stylesheet" href="/styles/stu-adm.css" />
+  </head>
+  <body>
+    <!-- <header id="main_title">
+  <h1>GURUNANAK COLLEGE E-LEARNING</h1>
+  <a id="logout" href="/logout">logout</a>
+</header> -->
+    <nav
+      style="
+        background-color: transparent !important;
+        font-family: Teko, sans-serif;
+      "
+      class="navbar navbar-expand-lg bg-body-tertiary"
+    >
+      <!-- <i class="fa-solid fa-arrow-left"></i>---------------------------------- -->
+      <div class="container-fluid" style="text-align: center">
+        <a class="navbar-brand" style="width: 100%; font-size: 40px"
+          >G N C E-LEARNING</a
+        >
+      </div>
+    </nav>
+
+    <main>
+      <div id="stu-adm-container">
+        <div class="stu-adm-btn">
+          <a href="/login/student">
+            <button type="button" class="btn btn-outline">Student</button>
+          </a>
+          <a href="/login/admin">
+            <button type="button" class="btn btn-outline">Admin</button>
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

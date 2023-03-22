@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/admin_login.css" />
+    <%- include('includes/head') %>
+  </head>
+  <body>
+    <%- include('includes/navebar') %>
+    <main>
+      <div id="login_form_container">
+        <form id="" action="/admin/login" method="post">
+          <label for="">Username</label>
+          <input
+            type="email"
+            id="login_username"
+            name="login_id"
+            value=""
+            placeholder="Enter your user name"
+          />
+          <label for="login_password">Password</label>
+          <input
+            type="password"
+            name="login_password"
+            id="login_password"
+            value=""
+          />
+
+          <button id="login" type="submit" class="btn btn-outline-primary">
+            Login
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

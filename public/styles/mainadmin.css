@@ -1,0 +1,151 @@
+.containormain {
+  width: 70%;
+  display: flex;
+  margin: 40px auto;
+  background-image: linear-gradient(to bottom right, #def2f1, #3aafa9);
+  /* background-color: rgba(255, 255, 255, 0); */
+  border-radius: 10px;
+}
+.buttonContainor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/* #logout {
+  position: absolute;
+  right: 30px !important;
+  font-size: 30px;
+  margin: 5px;
+  margin: 10px auto !important;
+  width: 8%;
+  height: 40px;
+  background-color: #17252a !important;
+  border-radius: 10px;
+  color: #feffff !important;
+  border: 2px solid #feffff !important;
+  align-items: center;
+  padding: 2px;
+} */
+.mainadminBtn {
+  margin: 10px auto !important;
+  width: 150px;
+  height: 50px;
+  background-color: #17252a !important;
+  border-radius: 10px;
+  color: #feffff !important;
+  border: 2px solid #feffff !important;
+  text-decoration: none;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+#logout:hover,
+.mainadminBtn a:hover {
+  background-color: #feffff !important;
+  color: #17252a !important;
+  border: 2px solid #17252a !important;
+}
+
+#logout:active,
+.mainadminBtn a:active {
+  background-color: #2b7a78 !important;
+  color: #feffff !important;
+  border: 2px solid #feffff !important;
+}
+.stud {
+  width: 70%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+
+  /* background-color: rgba(255, 255, 255, 0); */
+}
+.stud div {
+  background-image: linear-gradient(to bottom left, #e6f5f5, #3aafa9);
+  width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.mainadminBtn {
+  width: 250px;
+  height: 100px;
+}
+.changeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+}
+#studShow {
+  background-color: #17252a;
+  color: white;
+  height: 98%;
+  width: 49.8%;
+  border-radius: 10px 0px 0px 10px;
+  transition: ease-out;
+}
+#fackShow {
+  background-color: #feffff;
+  height: 98%;
+  width: 49.8%;
+  border-radius: 0px 10px 10px 0px;
+}
+.changeBtn {
+  background-color: #feffff;
+  height: 50px;
+}
+.faculty {
+  width: 70%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.faculty div {
+  background-image: linear-gradient(to bottom left, #e6f5f5, #3aafa9);
+  width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.editbtn,
+.deletebtn,
+.addBtn {
+  margin: 10px auto !important;
+  width: 150px;
+  height: 50px;
+  background-color: #17252a !important;
+  border-radius: 10px;
+  color: #feffff !important;
+  border: 2px solid #feffff !important;
+  text-decoration: none;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.editbtn:hover,
+.deletebtn:hover,
+.addBtn:hover {
+  background-color: #feffff !important;
+  color: #17252a !important;
+  border: 2px solid #17252a !important;
+}
+.buttonContainor a:hover{
+  background-color: #feffff !important;
+  color: #17252a !important;
+  border: 2px solid #17252a !important;
+}

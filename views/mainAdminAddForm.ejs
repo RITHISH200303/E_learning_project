@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/adduserForm.css" />
+    <%- include('includes/head') %>
+  </head>
+  <body>
+    <%- include('includes/navebar') %>
+    <main>
+      <form
+        action="/<%=adminType %>/<%=department %>/mainadmin/add"
+        method="post"
+      >
+        <label for="">Enter the name: </label>
+        <input type="text" placeholder="Name" name="name" required />
+        <label for="">Enter the UID: </label>
+        <input type="email" placeholder="userid" name="userId" required />
+        <label for="">Enter the password: </label>
+        <input type="text" placeholder="password" name="password" required />
+        <button type="submit">Submit</button>
+        <a href="/cancel/<%=department %>"> Cancel </a>
+      </form>
+    </main>
+  </body>
+</html>

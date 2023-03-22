@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <style>
+      /* CSS for video player goes here */
+    </style>
+  </head>
+  <body>
+    <!-- HTML for video player goes here -->
+    <video id="player" src="https://youtu.be/R_3mie1I7Rk"></video>
+
+    <!-- JavaScript for video player goes here -->
+    <script>
+      var player = document.getElementById("player");
+
+      // Play/pause the video when the button is clicked
+      function playPause() {
+        if (player.paused) {
+          player.play();
+        } else {
+          player.pause();
+        }
+      }
+    </script>
+  </body>
+</html>

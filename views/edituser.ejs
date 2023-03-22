@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <%- include('includes/head') %>
+    <link rel="stylesheet" href="/styles/edituser.css" />
+    <script src="/js/ajax.js" defer></script>
+  </head>
+  <body>
+    <%- include('includes/navebar') %>
+    <form action="/adminEdited/<%=user._id %>" method="post">
+      <h3>Edit</h3>
+      <label for="name">Name </label>
+      <input type="text" id="name" name="name" value="<%=user.name %>" />
+      <label for="userId">Email</label>
+      <input type="email" id="userId" name="userId" value="<%=user.userId%>" />
+      <label for="password">Password</label>
+      <input
+        type="text"
+        id="name"
+        name="password"
+        value="<%=user.password %>"
+      />
+
+      <button type="submit">Submit</button>
+      <a href="/cancelReturn"> Cancel </a>
+    </form>
+  </body>
+</html>

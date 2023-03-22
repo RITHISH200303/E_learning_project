@@ -1,0 +1,124 @@
+.quiz_containor {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.quiz_containor form {
+  width: 100%;
+  height: auto;
+
+}
+
+.quiz_containor form div {
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom right, #def2f1, #3aafa9);
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.quiz_containor form div h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.quiz_containor form div label {
+  font-weight: 600;
+  position: relative;
+  z-index: 10;
+  border-radius: 10px;
+  color: hsl(196, 29%, 13%);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+  padding-left: 40px;
+}
+
+.quiz_containor form div label input[type="radio"] {
+  display: none;
+}
+
+.lbspan {
+  background-color: rgba(255, 255, 255, 0.346);
+  z-index: -10;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding-top: 20px;
+  top: 0;
+  left: 0;
+}
+
+input[type="radio"]:checked+.lbspan {
+  background-color: #2b7a78;
+}
+
+main button {
+  background-color: #17252a !important;
+  color: #feffff !important;
+  border: 2px solid #feffff !important;
+  border-radius: 8px;
+  width: 200px;
+  padding: 20px;
+  margin: 20px;
+}
+
+main button:hover {
+  background-color: #feffff !important;
+  color: #17252a !important;
+  border: 2px solid #17252a !important;
+}
+
+main button:active {
+  background-color: #2b7a78 !important;
+  color: #feffff !important;
+  border: 2px solid #feffff !important;
+}
+
+.reload {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin-right: 10%;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+main {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 750px) {
+  .quiz_containor{
+    width: 100%;
+  }
+  .quiz_containor form div{
+   width: 90%;
+  }
+  .lbspan {
+    height: 120px;
+    padding: 10px;
+    overflow: auto;
+    -ms-overflow-style: none !important; /* IE and Edge */
+    scrollbar-width: none !important; /* Firefox */
+  }
+  .quiz_containor form div label {
+    margin: 30px;
+    padding-left: 10px;
+    width: 90%;
+  }
+
+}

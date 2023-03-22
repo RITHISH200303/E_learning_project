@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+    <link rel="stylesheet" href="/styles/sutdent.css" />
+    <title>student</title>
+  </head>
+  <body>
+    <%- include('includes/navebar') %>
+    <main>
+      <div id="login_form_container">
+        <form id="" action="/student" method="post">
+          <label for="">Username</label>
+          <input
+            type="email"
+            id="login_username"
+            name="login_id"
+            value=""
+            placeholder="Enter your user name"
+          />
+          <label for="login_password">Password</label>
+          <input
+            type="password"
+            name="login_password"
+            id="login_password"
+            value=""
+          />
+
+          <button id="login" type="submit" class="btn btn-outline-primary">
+            Login
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

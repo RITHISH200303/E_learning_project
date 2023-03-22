@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <%- include('includes/head') %>
+    <link rel="stylesheet" href="/styles/admin_control.css" />
+    <script src="/js/ajax.js" defer></script>
+</head>
+
+<body>
+  <%- include('includes/navebar') %>
+
+    <div class="adminControl_containor">
+      <ul class="adminControl_child">
+        <% for (student in students) { %>
+          <li>
+            <div id="holders"><span>Name:</span>
+              <%=students[student].name %>
+            </div>
+            <div id="holders">
+              <span>email:</span>
+              <%=students[student].userId %>
+            </div>
+            <br />
+            <br />
+            <a id="editButton" href="/edit/admin/<%=students[student]._id %>">
+              Edit
+            </a>
+            <form action="/delete/<%=students[student]._id %>" method="post">
+              <button id="deleteButton" type="submit">Delete</button>
+            </form>
+          </li>
+          <% } %>
+      </ul>
+    </div>
+    <a class="addBtn" href="/admin/useradd">ADD</a>
+</body>
+
+</html>

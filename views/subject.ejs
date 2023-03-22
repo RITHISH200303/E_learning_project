@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+    <link rel="stylesheet" href="/styles/subject.css" />
+    <title>subject</title>
+  </head>
+  <body>
+    <%- include('includes/navebar') %>
+    <div id="subject_container">
+      <% for(const subj in userSem ){ %>
+      <a href="/sem_subjects/<%= semesterId  %>/<%= userSem[subj] %>  ">
+        <button type="button" class="btn btn-outline-primary">
+          <%= userSem[subj] %>
+        </button>
+      </a>
+      <% } %>
+    </div>
+  </body>
+</html>

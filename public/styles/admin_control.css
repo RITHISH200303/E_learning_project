@@ -1,0 +1,122 @@
+.adminControl_containor {
+  width: 80% !important;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: #3aafa9;
+}
+.adminControl_containor ul {
+  background-image: linear-gradient(to bottom right, #def2f1, #3aafa9);
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  list-style: none;
+  padding: 0px;
+}
+.adminControl_child li {
+  background-image: linear-gradient(to bottom left, #e6f5f5, #3aafa9);
+  overflow: hidden;
+  width: 80%;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 15px 0px #17252a89;
+}
+.adminControl_child li button {
+  background-color: #17252a !important;
+  color: #feffff !important;
+  border: 2px solid #feffff !important;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+.adminControl_child li button:hover {
+  background-color: #feffff !important;
+  color: #17252a !important;
+  border: 2px solid #17252a !important;
+}
+
+.adminControl_child li a {
+  background-color: #17252a !important;
+  color: #feffff !important;
+  border: 2px solid #feffff !important;
+  margin: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+.adminControl_child li a:hover {
+  background-color: #feffff !important;
+  color: #17252a !important;
+  border: 2px solid #17252a !important;
+}
+span {
+  font-weight: 600;
+  padding: 2px 10px;
+}
+#holders {
+  background-color: transparent;
+}
+#idChanging {
+  width: 80% !important;
+  display: none;
+}
+#idChanging ul {
+  padding: 20px;
+}
+#editForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#editForm input {
+  width: 50%;
+  margin: 15px auto;
+  border: 2px solid #feffff;
+  border-radius: 10px;
+}
+#editForm input:active {
+  border: 2px solid #feffff;
+  outline: none;
+  box-shadow: none;
+}
+#editForm input:focus {
+  border: 2px solid #feffff;
+  outline: none;
+  box-shadow: none;
+}
+#EditButtonContainor {
+  background-color: #2b7a78;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.adminControl_containor {
+  display: flex;
+  flex-direction: column;
+}
+
+.addBtn {
+  padding: 10px !important;
+  width: 10%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  border-radius: 10px;
+  background-color: #17252a !important;
+  color: #feffff !important;
+  border: 2px solid #feffff !important;
+}
+.addBtn:hover {
+  background-color: #feffff !important;
+  color: #17252a !important;
+  border: 2px solid #17252a !important;
+}
+.addBtn:active {
+  background-color: #2b7a78 !important;
+  color: #feffff !important;
+  border: 2px solid #feffff !important;
+}

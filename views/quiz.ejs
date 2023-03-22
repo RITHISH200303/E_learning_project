@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+    <link rel="stylesheet" href="/styles/quiz.css" />
+  </head>
+
+  <body>
+    <%- include('includes/navebar') %>
+    <main>
+      <div style="width: 100%; display: flex; justify-content: end;">
+        <button class="reload" onclick="window.location.reload(true)">
+          RELOAD
+        </button>
+      </div>
+      <div class="quiz_containor">
+        <form action="/quiz/<%=department %>/<%=subjectName %>" method="post">
+          <% for(random of randomQuestions){ %>
+          <div>
+            <h2 for="">
+              <span style="margin-right: 10px"> <%=summa %> </span>
+              <%=random.question %>
+            </h2>
+
+            <label for="option1<%=summa %>" class="containor">
+              <input
+                type="radio"
+                required
+                id="option1<%=summa %>"
+                value="<%=random['option'+randomquiznums[0]]
+          %>"
+                name="<%=random.question %>"
+              />
+              <%=random['option'+randomquiznums[0]] %>
+              <span class="lbspan"></span> </label
+            ><br />
+
+            <label for="option2<%=summa %>" class="containor">
+              <input
+                type="radio"
+                required
+                id="option2<%=summa %>"
+                value="<%=random['option'+randomquiznums[1]]%>"
+                name="<%=random.question %>"
+              />
+              <%=random['option'+randomquiznums[1]] %>
+              <span class="lbspan"></span> </label
+            ><br />
+
+            <label for="option3<%=summa %>" class="containor">
+              <input
+                required
+                type="radio"
+                id="option3<%=summa %>"
+                value="<%=random['option'+randomquiznums[2]]
+          %>"
+                name="<%=random.question %>"
+              />
+              <%=random['option'+randomquiznums[2]] %>
+              <span class="lbspan"></span> </label
+            ><br />
+            <label for="option4<%=summa %>" class="containor">
+              <input
+                required
+                type="radio"
+                id="option4<%=summa %>"
+                value=" <%=random['option'+randomquiznums[3]]
+          %>"
+                name="<%=random.question %>"
+              />
+              <%=random['option'+randomquiznums[3]] %>
+              <span class="lbspan"></span> </label
+            ><br />
+          </div>
+          <% summa+=1} %>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
