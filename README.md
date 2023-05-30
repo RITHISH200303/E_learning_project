@@ -2,7 +2,7 @@
 -------------------------------------------------------------------------Download------------------------------------------------------------------------
 "npm i" or "npm install"
 
-Extract the dump folder in mongo db
+Extract the E_learning_dbs.rar and extract the dump in mongo db -----------------refer in youtube 
 
 
 use 
