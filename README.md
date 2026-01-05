@@ -1,25 +1,31 @@
-# E_learning_project
--------------------------------------------------------------------------Download------------------------------------------------------------------------
-"npm i" or "npm install"
+Download & Setup Instructions
+Install Dependencies:
 
-Extract the E_learning_dbs.rar and extract the dump in mongo db -----------------refer in youtube 
+text
+npm i
+or
 
+text
+npm install
+Database Setup:
 
-use 
+Extract the E_learning_dbs.rar file
+
+Import the database dump into MongoDB
+
+(Refer to YouTube tutorial for detailed instructions)
+
+Access Initial Login Credentials:
+
+javascript
+// In MongoDB, use:
 db.login_database.find()
-to find the login ids for the first time
+Run this command to find login IDs for the first time.
 
------------------------------------------------------------------------------------------------
+This is my college final year project - an e-learning portal where users can log in and study content according to their department.
 
-this is my college final year project
+The portal has two modules:
 
-This is basically a E learning portel 
+Admin
 
-we can login and study contents according to the department 
-
-This portel have two modules
-*admin
-*student
-
-
-
+Student
